@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 - Студент: [Григорий Мусихин](https://up.htmlacademy.ru/htmlcss/40/user/2524397).
-- Наставник: [Антон Варнавский]{https://htmlacademy.ru/profile/anton_varnauski}.
+- Наставник: [Антон Варнавский](https://htmlacademy.ru/profile/anton_varnauski).
 
 ---
 
