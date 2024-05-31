@@ -9,13 +9,11 @@
     <header class="page-header">
       <!-- Главная навигация сайта -->
       <nav class="main-nav">
+        <!-- 3.2. Логотип является ссылкой, которая ведёт на главную страницу на любых страницах.  -->
+        <a class="navigation-logo" href="">
+          <img class="logo" src="" alt="Логотип города Седона" />
+        </a>
         <ul class="navigation-list">
-          <li class="navigation-item">
-            <!-- 3.2. Логотип является ссылкой, которая ведёт на главную страницу на любых страницах.  -->
-            <a class="navigation-logo" href="">
-              <img class="logo" src="" alt="Логотип города Седона" />
-            </a>
-          </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">Главная</a>
           </li>
@@ -27,23 +25,23 @@
           </li>
         </ul>
         <!-- Навигация пользователя -->
-        <ul class="navigation-list navigation-user">
-          <li class="navigation-item">
+        <ul class="navigation-user">
+          <li class="navigation-user-item">
             <!-- 3.6. Шапка: при клике на лупу происходит переход на страницу поиска. Реализовывать страницу не нужно. -->
             <a class="navigation-link" href="#">
               <span class="visually-hidden">Поиск</span></a
             >
           </li>
-          <li class="navigation-item">
+          <li class="navigation-user-item">
             <!-- 3.5. Шапка: число «12» в избранном может быть изменено на любое двухзначное число. При клике на иконку сердца происходит переход на страницу избранного. Реализовывать страницу не нужно. -->
-            <a class="navigation-link" href="#"
+            <a class="navigation-user-link" href="#"
               ><span class="visually-hidden">Избранное</span>
               <span class="favorites-quantity">12</span></a
             >
           </li>
-          <li class="navigation-item">
+          <li class="navigation-user-item">
             <!-- 3.7. Шапка: при взаимодействии с элементом «Хочу сюда!» открывается попап. Реализовывать попап не нужно. -->
-            <button class="navigation-button">Хочу сюда!</button>
+            <button type="button" class="navigation-button">Хочу сюда!</button>
           </li>
         </ul>
       </nav>
@@ -54,17 +52,17 @@
       <!-- 3.8. Крупное фото: фотография занимает всю ширину блока, в её нижней части есть белая маска. -->
       <!-- 3.9. Hero-блок: Надпись «Welcome to the gorgeous Sedona, because the Grand Canyon sucks!» является контентным изображением. Текст переводить не нужно.  -->
       <section class="hero">
+        <h1 class="visually-hidden">Седона</h1>
         <img
           class="hero-img"
           src=""
           alt="Добро пожаловать в великолепный город Седона"
         />
-        <h1>Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
-        <p>Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
       </section>
       <!-- Cекция преимущества Седоны -->
       <section class="advantages">
-        <h2 class="visually-hidden">Преимущества города Седона</h2>
+        <h2>Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+        <p>Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
         <ul class="advantages-list">
           <li class="advantages-item">
             <h3>Настоящий городок</h3>
@@ -82,11 +80,11 @@
           <li class="advantages-item">
             <h3>Мало туристов</h3>
             <p>Большинство едет в Гранд Каньон и толпится там</p>
-            <img class="advantages-img" src="" alt="Гранд Каньон" />
           </li>
           <li class="advantages-item">
             <h3>Там есть мост дьявола</h3>
             <p>Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+            <img class="advantages-img" src="" alt="Гранд Каньон" />
           </li>
         </ul>
       </section>
@@ -98,7 +96,7 @@
           <!-- 3.10 Блок «жильё», «еда», «сувениры»: иконки являются декоративными изображениями -->
           <li class="services-item">
             <h3>Жильё</h3>
-            <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+            <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
           </li>
           <li class="services-item">
             <h3>Еда</h3>
@@ -120,11 +118,10 @@
           Укажите предполагаемые даты поездки,и мы покажем вам лучшие
           предложения гостиниц в Седоне
         </p>
-        <button class="hotel-search-btn">Поиск гостинницы в Седоне</button>
+        <button type="button" class="hotel-search-btn">
+          Поиск гостиницы в Седоне
+        </button>
       </section>
-    </main>
-    <!-- Подвал страницы -->
-    <footer class="page-footer">
       <!-- Секция Пдописаться на рассылку-->
       <!-- 3.12. Блок «подпишитесь на рассылку»: форма не должна отправляться если поле пустое. «Подписаться» отвечает за отправку формы на адрес https://echo.htmlacademy.ru/ -->
       <section class="footer-subscribe">
@@ -132,43 +129,45 @@
         <p>
           Только полезная информация и никакого спама, честное бойскаутское!
         </p>
-        <form action="https://echo.htmlacademy.ru" method="get">
-          <input type="text" name="user-mail" value="Ваш e-mail" />
-          <input type="submit" value="Подписаться" />
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <input
+            type="email"
+            name="user-mail"
+            placeholder="Ваш e-mail"
+            required
+          />
+          <button type="submit">Подписаться</button>
         </form>
       </section>
+    </main>
+    <!-- Подвал страницы -->
+    <footer class="page-footer">
       <!-- Секция социальные сети -->
       <!-- Иконки социальных сетей в футере ведут на профили HTML academy -->
-      <section class="footer-social">
-        <h2 class="visually-hidden">Мы в социальных сетях</h2>
-        <ul class="footer-social-list">
-          <li class="footer-social-item">
-            <a href="https://vk.com/htmlacademy">
-              <img src="" alt="Вконтакте" />
-            </a>
-          </li>
-          <li class="footer-social-item">
-            <a href="https://t.me/htmlacademy">
-              <img src="" alt="Телеграм" />
-            </a>
-          </li>
-          <li class="footer-social-item">
-            <a href="https://www.youtube.com/user/htmlacademyru">
-              <img src="" alt="Ютуб" />
-            </a>
-          </li>
-        </ul>
-        <!-- Телефон для связи -->
-        <!-- 3.13. Подвал: при клике на номер телефона можно позвонить -->
-        <address>
-          <h2 class="visually-hidden">Свяжитесь с нами по телефону</h2>
-          <a href="tel:+78121212">+7 (812) 812-12-12</a>
-        </address>
-        <!-- 3.4. Логотип Академии в подвале ведёт на лендинг интенсива «HTML и CSS. Профессиональная вёрстка сайтов» -->
-        <a href="https://htmlacademy.ru">
-          <img src="" alt="Логотип HTML академии" />
-        </a>
-      </section>
+      <ul class="footer-social-list">
+        <li class="footer-social-item">
+          <a href="https://vk.com/htmlacademy">
+            <img src="" alt="Вконтакте" />
+          </a>
+        </li>
+        <li class="footer-social-item">
+          <a href="https://t.me/htmlacademy">
+            <img src="" alt="Telegramm" />
+          </a>
+        </li>
+        <li class="footer-social-item">
+          <a href="https://www.youtube.com/user/htmlacademyru">
+            <img src="" alt="Youtube" />
+          </a>
+        </li>
+      </ul>
+      <!-- Телефон для связи -->
+      <!-- 3.13. Подвал: при клике на номер телефона можно позвонить -->
+      <a href="tel:+78121212">+7 (812) 812-12-12</a>
+      <!-- 3.4. Логотип Академии в подвале ведёт на лендинг интенсива «HTML и CSS. Профессиональная вёрстка сайтов» -->
+      <a href="https://htmlacademy.ru">
+        <img src="" alt="Логотип HTML academy" />
+      </a>
     </footer>
   </body>
 </html>
