@@ -6,11 +6,8 @@
     <title>HTML Academy: Гостинницы Седоны</title>
   </head>
   <body>
-    <!-- Шапка страницы -->
     <header class="page-header" data-test="header">
-      <!-- Главная навигация сайта -->
       <nav class="main-nav">
-        <!-- 3.2. Логотип является ссылкой, которая ведёт на главную страницу на любых страницах.  -->
         <a class="navigation-logo" href="index.html">
           <img class="logo" src="" alt="Логотип города Седона" />
         </a>
@@ -21,40 +18,32 @@
           <li class="navigation-item">
             <a class="navigation-link" href="#">О Седоне</a>
           </li>
-          <!-- 3.14. Ссылка «Гостиницы» является текущей и не ведёт сама на себя. -->
           <li class="navigation-item">
             <a class="navigation-link current-link">Гостиницы</a>
           </li>
         </ul>
-        <!-- Навигация пользователя -->
         <ul class="navigation-user">
           <li class="navigation-user-item">
-            <!-- 3.6. Шапка: при клике на лупу происходит переход на страницу поиска. Реализовывать страницу не нужно. -->
             <a class="navigation-link" href="#">
               <span class="visually-hidden">Поиск</span></a
             >
           </li>
           <li class="navigation-user-item">
-            <!-- 3.5. Шапка: число «12» в избранном может быть изменено на любое двухзначное число. При клике на иконку сердца происходит переход на страницу избранного. Реализовывать страницу не нужно. -->
             <a class="navigation-user-link" href="#"
               ><span class="visually-hidden">Избранное</span>
               <span class="favorites-quantity">12</span></a
             >
           </li>
           <li class="navigation-user-item">
-            <!-- 3.7. Шапка: при взаимодействии с элементом «Хочу сюда!» происходит переход на другую страницу. Реализовывать страницу не нужно. -->
             <a class="navigation-user-link" href="#">Хочу сюда!</a>
           </li>
         </ul>
       </nav>
     </header>
-    <!-- Основное содержимое страницы -->
     <main class="main-catalog" data-test="main">
-      <!-- Header основного содержимого страницы -->
       <header class="main-header">
         <h1>Гостиницы Седоны</h1>
-        <!-- 3.15. Хлебные крошки: иконка домика ведёт на главную страницу. -->
-        <ul class="breadcrumbs-list">
+        <ol class="breadcrumbs-list">
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link" href="index.html">
               <img src="" alt="Главная" />
@@ -63,11 +52,10 @@
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link breadcrumbs-current-link">Гостиницы</a>
           </li>
-        </ul>
+        </ol>
       </header>
       <section class="filter" data-test="filter">
         <h2 class="visually-hidden">Фильтры для поиска гостиницы</h2>
-        <!-- 3.16. Фильтр: верстать с помощью формы, кнопка «Применить» отвечает за отправку формы на адрес https://echo.htmlacademy.ru/. -->
         <form
           class="filter-form"
           action="https://echo.htmlacademy.ru"
@@ -105,14 +93,12 @@
             </label>
           </fieldset>
           <fieldset class="filter-form-group">
-            <!--  3.18. Фильтр: элементы рендж-слайдера, для изменения поле «от» и «до», являются интерактивными -->
             <legend class="filter-title">Стоимость, ₽:</legend>
             <input type="number" min="0" placeholder="0" />
             <input type="number" max="12000" placeholder="9000" />
             <input type="range" min="0" max="12000" value="9000" />
           </fieldset>
           <button class="form-button" type="submit">Применить</button>
-          <!-- 3.17. Фильтр: кнопка «Сбросить» возвращает форму в изначальное состояние. -->
           <button class="form-button" type="submit">Сбросить</button>
         </form>
       </section>
@@ -123,7 +109,6 @@
           <option value="exspensive">Сначала дорогие</option>
           <option value="popular">Сначала популярные</option>
         </select>
-        <!-- 3.19. Сортировка: элементы смены вида являются ссылками с get-параметрами. catalog.html?view=tile catalog.html?view=card catalog.html?view=list -->
         <a class="sort-button active-button" href="catalog.html?view=tile">
           <span class="visually-hidden">Показать заголовками</span>
         </a>
@@ -133,15 +118,14 @@
         <a class="sort-button" href="catalog.html?view=list">
           <span class="visually-hidden">Показать списком</span>
         </a>
-        <!-- Блок с карточками продуктов -->
         <div class="product-cards-list">
-          <!-- 3.21. Карточка товара: «Подробнее» переводит на подробную страницу отеля. Реализовывать страницу не нужно.
-            3.20. Карточка товара: кнопка «В избранное» добавляет в избранное, а «В избранном» удаляет из избранного. Реализовывать смену состояния не нужно. -->
           <article class="product-card">
-            <a class="product-card-link" href="#">
-              <img class="product-card-img" src="" alt="" />
-              <h3 class="product-card-tittle">Amara Resort & Spa</h3>
-            </a>
+            <a class="card-link-img" href="#">
+              <img class="product-card-img" src="" alt=""
+            /></a>
+            <a class="card-link-tittle" href="#"
+              ><h3 class="product-card-tittle">Amara Resort & Spa</h3></a
+            >
             <span class="product-house-type">Гостиница</span>
             <span class="product-price">От 4000 руб</span>
             <a class="more-detailes-link" href="#">Подробнее</a>
@@ -153,9 +137,11 @@
             <span class="product-rating">Рейтинг: 8,5</span>
           </article>
           <article class="product-card">
-            <a class="product-card-link" href="#">
-              <img class="product-card-img" src="" alt="" />
-              <h3 class="product-card-tittle">Villas at Poco Diablo</h3>
+            <a class="card-link-img" href="#">
+              <img class="product-card-img" src="" alt=""
+            /></a>
+            <a class="card-link-tittle" href="#"
+              ><h3 class="product-card-tittle">Villas at Poco Diablo</h3>
             </a>
             <span class="product-house-type">Гостиница</span>
             <span class="product-price">От 5000 руб</span>
@@ -168,10 +154,12 @@
             <span class="product-rating">Рейтинг: 9,2</span>
           </article>
           <article class="product-card">
-            <a class="product-card-link" href="#">
-              <img class="product-card-img" src="" alt="" />
-              <h3 class="product-card-tittle">Desert Quail Inn</h3>
-            </a>
+            <a class="card-link-img" href="#">
+              <img class="product-card-img" src="" alt=""
+            /></a>
+            <a class="card-link-tittle" href="#"
+              ><h3 class="product-card-tittle">Desert Quail Inn</h3></a
+            >
             <span class="product-house-type">Гостиница</span>
             <span class="product-price">От 2500 руб</span>
             <a class="more-detailes-link" href="#">Подробнее</a>
@@ -183,10 +171,12 @@
             <span class="product-rating"> 6,9</span>
           </article>
           <article class="product-card">
-            <a class="product-card-link" href="#">
-              <img class="product-card-img" src="" alt="" />
-              <h3 class="product-card-tittle">GreenTree Inn</h3>
-            </a>
+            <a class="card-link-img" href="#">
+              <img class="product-card-img" src="" alt=""
+            /></a>
+            <a class="card-link-tittle" href="#"
+              ><h3 class="product-card-tittle">GreenTree Inn</h3></a
+            >
             <span class="product-house-type">Гостиница</span>
             <span class="product-price">От 1500 руб</span>
             <a class="more-detailes-link" href="#">Подробнее</a>
@@ -198,7 +188,6 @@
             <span class="product-rating">Рейтинг: 5,0</span>
           </article>
         </div>
-        <!-- 3.22. Пагинация: с активным элементом нельзя взаимодействовать, поэтому у элемента не должно быть состояний :hover, :focus, :active. -->
         <ul class="pagination">
           <li>
             <a class="pagination-item pagination-current">1</a>
@@ -236,10 +225,7 @@
         </form>
       </section>
     </main>
-    <!-- Подвал страницы -->
     <footer class="page-footer" data-test="footer">
-      <!-- Секция социальные сети -->
-      <!-- Иконки социальных сетей в футере ведут на профили HTML academy -->
       <ul class="footer-social-list">
         <li class="footer-social-item">
           <a class="social-link" href="https://vk.com/htmlacademy">
@@ -260,10 +246,7 @@
           </a>
         </li>
       </ul>
-      <!-- Телефон для связи -->
-      <!-- 3.13. Подвал: при клике на номер телефона можно позвонить -->
       <a href="tel:+78121212">+7 (812) 812-12-12</a>
-      <!-- 3.4. Логотип Академии в подвале ведёт на лендинг интенсива «HTML и CSS. Профессиональная вёрстка сайтов» -->
       <a href="https://htmlacademy.ru">
         <img src="" alt="Логотип HTML academy" />
       </a>
