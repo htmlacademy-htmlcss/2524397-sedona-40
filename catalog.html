@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -124,13 +124,13 @@
           <option value="popular">Сначала популярные</option>
         </select>
         <!-- 3.19. Сортировка: элементы смены вида являются ссылками с get-параметрами. catalog.html?view=tile catalog.html?view=card catalog.html?view=list -->
-        <a class="sort-button active-button">
-          <span class="visually-hidden">Показать карточками</span>
+        <a class="sort-button active-button" href="catalog.html?view=tile">
+          <span class="visually-hidden">Показать заголовками</span>
         </a>
-        <a class="sort-button" href="#">
+        <a class="sort-button" href="catalog.html?view=card">
           <span class="visually-hidden">Показать крупными карточками</span>
         </a>
-        <a class="sort-button" href="#">
+        <a class="sort-button" href="catalog.html?view=list">
           <span class="visually-hidden">Показать списком</span>
         </a>
         <!-- Блок с карточками продуктов -->
@@ -142,60 +142,60 @@
               <img class="product-card-img" src="" alt="" />
               <h3 class="product-card-tittle">Amara Resort & Spa</h3>
             </a>
-            <p>
-              <span class="product-house-type">Гостиница</span>
-              <span class="product-price">От 4000 руб</span>
-            </p>
+            <span class="product-house-type">Гостиница</span>
+            <span class="product-price">От 4000 руб</span>
             <a class="more-detailes-link" href="#">Подробнее</a>
             <button class="product-favourit-button" type="button">
               Избранное
             </button>
-            <p class="product-rating">Рейтинг: 8,5</p>
+            <!-- заменить на картинку -->
+            <span>4 звезды</span>
+            <span class="product-rating">Рейтинг: 8,5</span>
           </article>
           <article class="product-card">
             <a class="product-card-link" href="#">
               <img class="product-card-img" src="" alt="" />
               <h3 class="product-card-tittle">Villas at Poco Diablo</h3>
             </a>
-            <p>
-              <span class="product-house-type">Гостиница</span>
-              <span class="product-price">От 5000 руб</span>
-            </p>
+            <span class="product-house-type">Гостиница</span>
+            <span class="product-price">От 5000 руб</span>
             <a class="more-detailes-link" href="#">Подробнее</a>
             <button class="product-favourit-button" type="button">
               Избранное
             </button>
-            <p class="product-rating">Рейтинг: 9,2</p>
+            <!-- заменить на картинку -->
+            <span>4 звезды</span>
+            <span class="product-rating">Рейтинг: 9,2</span>
           </article>
           <article class="product-card">
             <a class="product-card-link" href="#">
               <img class="product-card-img" src="" alt="" />
               <h3 class="product-card-tittle">Desert Quail Inn</h3>
             </a>
-            <p>
-              <span class="product-house-type">Гостиница</span>
-              <span class="product-price">От 2500 руб</span>
-            </p>
+            <span class="product-house-type">Гостиница</span>
+            <span class="product-price">От 2500 руб</span>
             <a class="more-detailes-link" href="#">Подробнее</a>
             <button class="product-favourit-button" type="button">
               Избранное
             </button>
-            <p class="product-rating">Рейтинг: 6,9</p>
+            <!-- заменить на картинку -->
+            <span>3 звезды</span>
+            <span class="product-rating"> 6,9</span>
           </article>
           <article class="product-card">
             <a class="product-card-link" href="#">
               <img class="product-card-img" src="" alt="" />
               <h3 class="product-card-tittle">GreenTree Inn</h3>
             </a>
-            <p>
-              <span class="product-house-type">Гостиница</span>
-              <span class="product-price">От 1500 руб</span>
-            </p>
+            <span class="product-house-type">Гостиница</span>
+            <span class="product-price">От 1500 руб</span>
             <a class="more-detailes-link" href="#">Подробнее</a>
             <button class="product-favourit-button" type="button">
               Избранное
             </button>
-            <p class="product-rating">Рейтинг: 5,0</p>
+            <!-- заменить на картинку -->
+            <span>2 звезды</span>
+            <span class="product-rating">Рейтинг: 5,0</span>
           </article>
         </div>
         <!-- 3.22. Пагинация: с активным элементом нельзя взаимодействовать, поэтому у элемента не должно быть состояний :hover, :focus, :active. -->
