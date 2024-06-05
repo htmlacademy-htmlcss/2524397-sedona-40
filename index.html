@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
   </head>
   <body>
     <header class="page-header" data-test="header">
       <nav class="main-nav">
-        <a class="navigation-logo" href="">
-          <img class="logo" src="" alt="Логотип города Седона" />
+        <a class="navigation-logo" href="index.html">
+          <img class="logo" src="images/logo.svg" width="140" height="70" alt="Логотип города Седона">
         </a>
         <ul class="navigation-list">
           <li class="navigation-item">
@@ -24,14 +24,18 @@
         <ul class="navigation-user">
           <li class="navigation-user-item">
             <a class="navigation-link" href="#">
-              <span class="visually-hidden">Поиск</span></a
-            >
+              <!-- Коонтент + спан удалить? -->
+              <img class="search-img" src="images/search.svg" width="20" height="20" alt="Поиск">
+              <span class="visually-hidden">Поиск</span>
+            </a>
           </li>
           <li class="navigation-user-item">
-            <a class="navigation-user-link" href="#"
-              ><span class="visually-hidden">Избранное</span>
-              <span class="favorites-quantity">12</span></a
-            >
+            <a class="navigation-user-link" href="#">
+              <!-- Коонтент + спан избранное удалить? -->
+              <img class="favorites-img" src="images/favorites.svg" width="18" height="17" alt="Избранное">
+              <span class="visually-hidden">Избранное</span>
+              <span class="favorites-quantity">12</span>
+            </a>
           </li>
           <li class="navigation-user-item">
             <a class="navigation-user-link" href="#">Хочу сюда!</a>
@@ -42,11 +46,8 @@
     <main class="main-index" data-test="main">
       <section class="hero" data-test="hero">
         <h1 class="visually-hidden">Седона</h1>
-        <img
-          class="hero-img"
-          src=""
-          alt="Добро пожаловать в великолепный город Седона"
-        />
+        <!-- экспорт три в одном? -->
+        <img class="hero-img" src="images/welcome.svg" width="458" height="352" alt="Добро пожаловать в великолепный город Седона" style="background-color: #81B3D3;">
       </section>
       <section class="advantages" data-test="advantages">
         <h2>Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
@@ -55,7 +56,7 @@
           <li class="advantages-item">
             <h3>Настоящий городок</h3>
             <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-            <img class="advantages-img" src="" alt="Красивый город Седона" />
+            <img class="advantages-img" src="images/advantages-1.jpg" width="800" height="385" alt="Красивый город Седона">
           </li>
           <li class="advantages-item">
             <h3>Небольшая площадь</h3>
@@ -72,7 +73,7 @@
           <li class="advantages-item">
             <h3>Там есть мост дьявола</h3>
             <p>Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
-            <img class="advantages-img" src="" alt="Гранд Каньон" />
+            <img class="advantages-img" src="images/advantages-2.jpg" width="800" height="385" alt="Гранд Каньон">
           </li>
         </ul>
       </section>
@@ -81,14 +82,13 @@
         <p>Опытный персонал и качественное обслуживание!</p>
         <ul class="services-list">
           <li class="services-item">
+            <!-- Декаративные элементы? -->
             <h3>Жильё</h3>
             <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
           </li>
           <li class="services-item">
             <h3>Еда</h3>
-            <p>
-              Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!
-            </p>
+            <p>Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
           </li>
           <li class="services-item">
             <h3>Сувениры</h3>
@@ -98,28 +98,16 @@
       </section>
       <section class="hotel-search" data-test="search">
         <h2>Заинтересовались?</h2>
-        <p>
-          Укажите предполагаемые даты поездки,и мы покажем вам лучшие
-          предложения гостиниц в Седоне
-        </p>
-        <button type="button" class="hotel-search-btn">
-          Поиск гостиницы в Седоне
-        </button>
+        <p>Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <button type="button" class="hotel-search-btn">Поиск гостиницы в Седоне</button>
       </section>
       <section class="subscribe">
         <h2>Подпишитесь на рассылку</h2>
-        <p>
-          Только полезная информация и никакого спама, честное бойскаутское!
-        </p>
+        <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form action="https://echo.htmlacademy.ru" method="post">
-          <label class="visually-hidden"
-            >Ваш e-mail
-            <input
-              type="email"
-              name="user-mail"
-              placeholder="Ваш e-mail"
-              required
-            />
+          <!-- правильно? -->
+          <label class="visually-hidden">Ваш e-mail
+            <input type="email" name="user-mail" placeholder="Ваш e-mail" required>
             <button type="submit">Подписаться</button>
           </label>
         </form>
@@ -129,26 +117,24 @@
       <ul class="footer-social-list">
         <li class="footer-social-item">
           <a class="social-link" href="https://vk.com/htmlacademy">
-            <img src="" alt="Вконтакте" />
+            <!-- экспорт с белыми отступами? -->
+            <img src="images/social-vk.svg" width="47" height="40" alt="Вконтакте">
           </a>
         </li>
         <li class="footer-social-item">
           <a class="social-link" href="https://t.me/htmlacademy">
-            <img src="" alt="Telegramm" />
+            <img src="images/social-telegram.svg" width="47" height="40" alt="Telegramm">
           </a>
         </li>
         <li class="footer-social-item">
-          <a
-            class="social-link"
-            href="https://www.youtube.com/user/htmlacademyru"
-          >
-            <img src="" alt="Youtube" />
+          <a class="social-link" href="https://www.youtube.com/user/htmlacademyru">
+            <img src="images/social-youtube.svg" width="47" height="40" alt="Youtube">
           </a>
         </li>
       </ul>
-      <a href="tel:+78121212">+7 (812) 812-12-12</a>
-      <a href="https://htmlacademy.ru">
-        <img src="" alt="Логотип HTML academy" />
+      <a class="footer-telephone" href="tel:+78121212">+7 (812) 812-12-12</a>
+      <a class="footer-logo-link" href="https://htmlacademy.ru">
+        <img src="images/logo_htmlacademy.svg" width="115" height="33" alt="Логотип HTML academy">
       </a>
     </footer>
   </body>
