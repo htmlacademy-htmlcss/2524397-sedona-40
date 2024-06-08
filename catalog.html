@@ -92,7 +92,7 @@
             <input type="range" min="0" max="12000" value="9000">
           </fieldset>
           <button class="form-button" type="submit">Применить</button>
-          <button class="form-button" type="submit">Сбросить</button>
+          <button class="form-button" type="reset">Сбросить</button>
         </form>
       </section>
       <section class="catalog" data-test="catalog">
@@ -104,22 +104,29 @@
           <option value="exspensive">Сначала дорогие</option>
           <option value="popular">Сначала популярные</option>
         </select>
-        <!-- Список? -->
-        <a class="sort-button" href="catalog.html?view=card">
-          <!-- контент + удалить спан? -->
-          <span class="visually-hidden">Показать крупными карточками</span>
-          <img class="card-view" src="images/catalog/card-view.svg" width="16" height="14" alt="Показать крупными карточками">
-        </a>
-        <a class="sort-button active-button" href="catalog.html?view=tile">
-          <!-- контент + удалить спан? -->
-          <span class="visually-hidden">Показать заголовками</span>
-          <img class="title-view" src="images/catalog/title-view.svg" width="16" height="14" alt="Показать заголовками">
-        </a>
-        <a class="sort-button" href="catalog.html?view=list">
-          <!-- контент + удалить спан? -->
-          <span class="visually-hidden">Показать списком</span>
-          <img class="list-view" src="images/catalog/list-view.svg" width="16" height="14" alt="Показать списком">
-        </a>
+         <ul class="catalog-view-list">
+          <li class="catalog-view-item">
+            <a class="sort-button" href="catalog.html?view=card">
+              <!-- контент + удалить спан? -->
+              <span class="visually-hidden">Показать крупными карточками</span>
+              <img class="card-view" src="images/catalog/card-view.svg" width="16" height="14" alt="Показать крупными карточками">
+            </a>
+          </li>
+          <li class="catalog-view-item">
+            <a class="sort-button active-button" href="catalog.html?view=tile">
+              <!-- контент + удалить спан? -->
+              <span class="visually-hidden">Показать заголовками</span>
+              <img class="title-view" src="images/catalog/title-view.svg" width="16" height="14" alt="Показать заголовками">
+            </a>
+          </li>
+          <li class="catalog-view-item">
+            <a class="sort-button" href="catalog.html?view=list">
+              <!-- контент + удалить спан? -->
+              <span class="visually-hidden">Показать списком</span>
+              <img class="list-view" src="images/catalog/list-view.svg" width="16" height="14" alt="Показать списком">
+            </a>
+          </li>
+         </ul>
         <div class="product-cards-list">
           <article class="product-card">
             <a class="card-link-img" href="#">
