@@ -188,7 +188,7 @@
             <span class="product-rating">Рейтинг: 5,0</span>
           </article>
         </div>
-        <ul class="pagination">
+        <ul class="pagination-list">
           <li>
             <a class="pagination-item pagination-current">1</a>
           </li>
@@ -213,7 +213,8 @@
         <h2>Подпишитесь на рассылку</h2>
         <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form action="https://echo.htmlacademy.ru" method="post">
-          <input type="email" name="user-mail" placeholder="Ваш e-mail" required>
+          <label class="visually-hidden" for="input-email">Ваш e-mail</label>
+          <input type="email" name="user-mail" placeholder="Ваш e-mail" id="input-email" required>
           <button class="subscribe-button" type="submit">Подписаться</button>
         </form>
       </section>
@@ -222,17 +223,17 @@
       <ul class="footer-social-list">
         <li class="footer-social-item">
           <a class="social-link" href="https://vk.com/htmlacademy">
-            <img src="images/social-vk.svg" width="47" height="40" alt="Вконтакте">
+            <span class="visually-hidden">Вконтакте</span>
           </a>
         </li>
         <li class="footer-social-item">
           <a class="social-link" href="https://t.me/htmlacademy">
-            <img src="images/social-telegram.svg" width="47" height="40" alt="Telegram">
+            <span class="visually-hidden">Telegram</span>
           </a>
         </li>
         <li class="footer-social-item">
           <a class="social-link" href="https://www.youtube.com/user/htmlacademyru">
-            <img src="images/social-youtube.svg" width="47" height="40" alt="Youtube">
+            <span class="visually-hidden">Youtube</span>
           </a>
         </li>
       </ul>

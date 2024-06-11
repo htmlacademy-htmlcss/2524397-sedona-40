@@ -29,7 +29,8 @@ body {
 }
 
 .navigation-link,
-.navigation-user-link {
+.navigation-user-link,
+.social-link {
   font-family: "PT Sans", sans-serif;
   font-size: 20px;
   font-weight: 700;
@@ -191,10 +192,6 @@ input[type="email"] {
   list-style: none;
 }
 
-.visually-hidden {
-  display: none;
-}
-
 /* КАТАЛОГ */
 
 .background-group {
@@ -267,7 +264,8 @@ input[type="number"] {
   text-transform: uppercase;
 }
 
-.catalog-view-list {
+.catalog-view-list,
+.pagination-list {
   list-style: none;
 }
 
