@@ -257,6 +257,17 @@ input[type="number"] {
   color: #000000;
 }
 
+.catalog-view-item a {
+  font-family: "PT Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+  color: #000000;
+  background-color: #ffffff;
+  text-decoration: none;
+}
+
 .catalog h2 {
   font-weight: 700;
   font-size: 30px;
