@@ -2,7 +2,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: url(../fonts/ptsans-400.woff2) format("woff2");
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -10,7 +10,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: url(../fonts/ptsans-700.woff2) format("woff2");
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -47,7 +47,6 @@ body {
   text-decoration-thickness: 2px;
 }
 
-
 .navigation-user {
   list-style: none;
 }
@@ -69,9 +68,9 @@ body {
   background-repeat: no-repeat;
 }
 
-.advantages h2,
-.service h2,
-.hotel-search h2 {
+.advantages-title,
+.service-title,
+.search-title {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -81,7 +80,7 @@ body {
 
 .advantages-paragraph,
 .service-paragraph,
-.hotel-search p {
+.search-paragraph {
   font-size: 22px;
   line-height: 26px;
   text-align: center;
@@ -93,8 +92,8 @@ body {
   list-style: none;
 }
 
-.advantages-list h3,
-.services-list h3 {
+.advantages-item-title,
+.services-item-title {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -102,14 +101,14 @@ body {
   text-transform: uppercase;
 }
 
-.advantages-list p,
-.services-list p {
+.advantages-item-paragraph,
+.services-item-paragraph {
   text-align: center;
 }
 
 .advantages-list li:first-child {
   color: #ffffff;
-  background-color: #82B3D3;
+  background-color: #82b3d3;
 }
 
 .advantages-list li:nth-child(2n) {
@@ -122,7 +121,7 @@ body {
 
 .advantages-list li:last-child {
   color: #ffffff;
-  background-color: #82B3D3;
+  background-color: #82b3d3;
 }
 
 .services-list li:last-child,
@@ -147,14 +146,14 @@ body {
   background-repeat: no-repeat;
 }
 
-input[type="email"] {
+.input-email {
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 24px;
   color: #000000;
 }
 
-.subscribe h2 {
+.subscribe-title {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -163,7 +162,7 @@ input[type="email"] {
   text-transform: uppercase;
 }
 
-.subscribe p {
+.subscribe-paragraph {
   font-size: 22px;
   line-height: 26px;
   color: #ffffff;
@@ -175,7 +174,7 @@ input[type="email"] {
   font-size: 20px;
   line-height: 36px;
   color: #ffffff;
-  background-color: #82B3D3;
+  background-color: #82b3d3;
   text-align: center;
   text-transform: uppercase;
 }
@@ -201,7 +200,7 @@ input[type="email"] {
   background-color: #a8d7f7;
 }
 
-.main-header h1 {
+.main-title {
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
@@ -242,14 +241,14 @@ input[type="email"] {
 }
 
 .form-submit {
-  background-color: #82B3D3;
+  background-color: #82b3d3;
 }
 
 .form-reset {
   background-color: transparent;
 }
 
-input[type="number"] {
+.input-number {
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -257,7 +256,7 @@ input[type="number"] {
   color: #000000;
 }
 
-.catalog-view-item a {
+.sort-button {
   font-family: "PT Sans", sans-serif;
   font-size: 20px;
   font-weight: 700;
@@ -268,14 +267,14 @@ input[type="number"] {
   text-decoration: none;
 }
 
-.catalog h2 {
+.catalog-result-tittle {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
 }
 
-.catalog-view-list,
+.result-view-list,
 .pagination-list {
   list-style: none;
 }
@@ -348,7 +347,7 @@ input[type="number"] {
 
 }
 
-.catalog-subscribe h2 {
+.catalog-subscribe-title {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -357,7 +356,7 @@ input[type="number"] {
   text-transform: uppercase;
 }
 
-.catalog-subscribe p {
+.catalog-subscribe-paragraph {
   font-size: 22px;
   line-height: 26px;
   color: #000000;
