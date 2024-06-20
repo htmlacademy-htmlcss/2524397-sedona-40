@@ -41,7 +41,7 @@ body {
 /* HEADER */
 .main-nav {
   display: flex;
-  width: 1200px;
+  width: 1060px;
   margin: 0 auto;
   align-items: center;
 }
@@ -532,6 +532,7 @@ body {
   display: flex;
   list-style: none;
   margin: 0 auto;
+  margin-bottom: 156px;
   padding: 0;
 }
 
@@ -572,6 +573,7 @@ body {
 .catalog-subscribe {
   background-color: #ffffff;
   text-align: center;
+  margin-bottom: 144px;
 }
 
 .catalog-subscribe-title {
