@@ -442,6 +442,8 @@ body {
 .catalog-result-header {
   display: flex;
   align-items: center;
+  width: 1060px;
+  margin: 0 auto;
   margin-bottom: 40px;
 }
 
@@ -451,6 +453,7 @@ body {
   line-height: 36px;
   text-transform: uppercase;
   margin-right: 200px;
+  width: 338px;
 }
 
 .sorting {
@@ -463,19 +466,21 @@ body {
   height: 49px;
 }
 
+.result-view-list {
+  list-style: none;
+  width: 130px;
+}
+
 .product-cards-list {
   display: flex;
   flex-wrap: wrap;
+  width: 1060px;
+  margin: 0 auto;
   margin-bottom: 40px;
 }
 
 .product-card {
   width: 340px;
-}
-
-
-.result-view-list {
-  list-style: none;
 }
 
 .card-link-tittle,
@@ -526,7 +531,7 @@ body {
   width: 1060px;
   display: flex;
   list-style: none;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
 }
 
