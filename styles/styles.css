@@ -38,7 +38,22 @@ body {
   min-height: 100%;
 }
 
+/*
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+} */
+
 /* HEADER */
+
 .main-nav {
   display: flex;
   width: 1060px;
@@ -59,8 +74,25 @@ body {
   list-style: none;
 }
 
-.navigation-item {
+.navigation-link {
+  display: block;
   padding: 20px 16px;
+  font-family: "PT Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+  color: #000000;
+  background-color: #ffffff;
+  text-decoration: none;
+}
+
+.current-link {
+  text-decoration: underline;
+  text-decoration-color: #756257;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 20px;
+  text-underline-position: under;
 }
 
 .navigation-user {
@@ -76,7 +108,6 @@ body {
   padding: 22px 12px;
 }
 
-.navigation-link,
 .navigation-user-link,
 .social-link {
   font-family: "PT Sans", sans-serif;
@@ -89,12 +120,6 @@ body {
   text-decoration: none;
 }
 
-.current-link {
-  text-decoration: underline;
-  text-decoration-color: #756257;
-  text-decoration-thickness: 2px;
-}
-
 .navigation-user-buttton {
   font-weight: 700;
   font-size: 16px;
@@ -105,6 +130,7 @@ body {
 }
 
 /* MAIN */
+
 .page-container {
   width: 1200px;
   margin: 0 auto;
@@ -120,8 +146,8 @@ body {
   background-position: bottom center, center center;
   background-size: 100% auto, cover;
   background-repeat: no-repeat, no-repeat;
-  height: 485px;
-  margin-bottom: 69px;
+  padding: 51px 371px 82px;
+  margin-bottom: 60px;
 }
 
 .hero-title {
@@ -324,6 +350,7 @@ body {
 }
 
 /* Footer */
+
 .page-footer-container {
   display: flex;
   justify-content: space-between;
@@ -474,6 +501,7 @@ body {
 .product-cards-list {
   display: flex;
   flex-wrap: wrap;
+  gap: 20px;
   width: 1060px;
   margin: 0 auto;
   margin-bottom: 40px;
@@ -589,16 +617,3 @@ body {
   line-height: 26px;
   color: #000000;
 }
-
-/* .visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-} */
