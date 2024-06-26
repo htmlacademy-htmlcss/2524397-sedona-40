@@ -205,11 +205,11 @@ body {
   flex-direction: column;
   justify-content: center;
   width: 400px;
-  height: 385px;
+  padding: 112px 85px;
 }
 
 .advantages-with-image {
-  margin: 102px 85px;
+  padding: 102px 85px;
 }
 
 .service {
@@ -242,10 +242,10 @@ body {
 }
 
 .services-item {
-  height: 385px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 81px 85px;
 }
 
 .advantages-item-title,
@@ -429,6 +429,11 @@ body {
   color: #ffffff;
 }
 
+.form-buttons {
+  display: flex;
+  flex-direction: column;
+}
+
 .form-submit,
 .form-reset {
   font-family: "PT Sans", sans-serif;
@@ -437,6 +442,10 @@ body {
   line-height: 20px;
   color: #ffffff;
   text-transform: uppercase;
+  border: none;
+  border-radius: 4px;
+  width: 191px;
+  padding: 9px 0;
 }
 
 .form-submit {
@@ -472,6 +481,12 @@ body {
   width: 1060px;
   margin: 0 auto;
   margin-bottom: 40px;
+}
+
+.filter-form-group {
+  display: flex;
+  flex-direction: column;
+  border: none;
 }
 
 .catalog-result-tittle {
@@ -562,16 +577,21 @@ body {
   margin: 0 auto;
   margin-bottom: 156px;
   padding: 0;
+  vertical-align: bottom;
 }
 
 .pagination-item {
-  width: 60px;
+  display: block;
   background-color: #82b3d3;
   margin-right: 8px;
+  border-radius: 4px;
   text-align: center;
 }
 
 .pagination-link {
+  display: block;
+  width: 60px;
+  height: 60px;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
