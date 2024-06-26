@@ -179,13 +179,6 @@ body {
   margin-bottom: 90px;
 }
 
-.search-paragraph {
-  font-size: 22px;
-  line-height: 26px;
-  text-align: center;
-  color: #333333;
-}
-
 .advantages-list {
   display: flex;
   flex-wrap: wrap;
@@ -210,10 +203,6 @@ body {
 
 .advantages-with-image {
   padding: 102px 85px;
-}
-
-.service {
-  padding-bottom: 96px;
 }
 
 .service-title {
@@ -248,18 +237,34 @@ body {
   padding: 81px 85px;
 }
 
-.advantages-item-title,
 .services-item-title {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
   text-align: center;
   text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 30px;
 }
 
-.advantages-item-paragraph,
+.advantages-item-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 62px;
+}
+
+.advantages-item-paragraph {
+  text-align: center;
+  margin: 0;
+}
+
 .services-item-paragraph {
   text-align: center;
+  margin: 0;
 }
 
 .advantages-list li:first-child {
@@ -287,7 +292,7 @@ body {
 
 .hotel-search {
   text-align: center;
-  margin-bottom: 96px;
+  padding: 96px 304px;
 }
 
 .search-title {
@@ -295,6 +300,16 @@ body {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.search-paragraph {
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #333333;
+  margin-bottom: 54px;
 }
 
 .hotel-search-button {
@@ -330,6 +345,8 @@ body {
   line-height: 36px;
   color: #ffffff;
   text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 20px;
 }
 
 .subscribe-paragraph {
@@ -337,6 +354,8 @@ body {
   line-height: 26px;
   color: #ffffff;
   text-align: center;
+  margin: 0;
+  margin-bottom: 54px;
 }
 
 .subscribe-button {
@@ -475,6 +494,10 @@ body {
   text-decoration: none;
 }
 
+.catalog-result {
+  margin-bottom: 60px;
+}
+
 .catalog-result-header {
   display: flex;
   align-items: center;
@@ -575,7 +598,6 @@ body {
   display: flex;
   list-style: none;
   margin: 0 auto;
-  margin-bottom: 156px;
   padding: 0;
   vertical-align: bottom;
 }
@@ -621,7 +643,7 @@ body {
 .catalog-subscribe {
   background-color: #ffffff;
   text-align: center;
-  margin-bottom: 144px;
+  padding: 96px 258px 104px;
 }
 
 .catalog-subscribe-title {
@@ -630,10 +652,14 @@ body {
   line-height: 36px;
   color: #000000;
   text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 20px;
 }
 
 .catalog-subscribe-paragraph {
   font-size: 22px;
   line-height: 26px;
   color: #000000;
+  margin: 0;
+  margin-bottom: 54px;
 }
