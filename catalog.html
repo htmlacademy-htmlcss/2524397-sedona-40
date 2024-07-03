@@ -59,39 +59,43 @@
           <section class="filter" data-test="filter">
             <h2 class="visually-hidden">Фильтры для поиска гостиницы</h2>
             <form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
-              <fieldset class="filter-form-group">
-                <legend class="filter-title">Инфраструктура:</legend>
-                <label>
-                  <input type="checkbox" name="pool" checked>Бассейн
-                </label>
-                <label>
-                  <input type="checkbox" name="parking" checked>Парковка
-                </label>
-                <label>
-                  <input type="checkbox" name="wifi">Wi-Fi
-                </label>
-              </fieldset>
-              <fieldset class="filter-form-group">
-                <legend class="filter-title">Тип Жилья:</legend>
-                <label>
-                  <input type="radio" name="house-type" value="hotel" checked>Гостиница
-                </label>
-                <label>
-                  <input type="radio" name="house-type" value="motel">Мотель
-                </label>
-                <label>
-                  <input type="radio" name="house-type" value="apartments">Апартаменты
-                </label>
-              </fieldset>
-              <fieldset class="filter-form-group">
-                <legend class="filter-title">Стоимость, ₽:</legend>
-                <input class="input-number" type="number" min="0" placeholder="0">
-                <input class="input-number" type="number" max="12000" placeholder="9000">
-                <input type="range" min="0" max="12000" value="9000">
-              </fieldset>
-              <div class="form-buttons">
-                <button class="form-submit" type="submit">Применить</button>
-                <button class="form-reset" type="reset">Сбросить</button>
+              <div class="filter-left-column">
+                <fieldset class="filter-form-group">
+                  <legend class="filter-title">Инфраструктура:</legend>
+                  <label class="filter-item">
+                    <input type="checkbox" name="pool" checked>Бассейн
+                  </label>
+                  <label class="filter-item">
+                    <input type="checkbox" name="parking" checked>Парковка
+                  </label>
+                  <label class="filter-item">
+                    <input type="checkbox" name="wifi">Wi-Fi
+                  </label>
+                </fieldset>
+                <fieldset class="filter-form-group">
+                  <legend class="filter-title">Тип Жилья:</legend>
+                  <label class="filter-item">
+                    <input type="radio" name="house-type" value="hotel" checked>Гостиница
+                  </label>
+                  <label class="filter-item">
+                    <input type="radio" name="house-type" value="motel">Мотель
+                  </label>
+                  <label class="filter-item">
+                    <input type="radio" name="house-type" value="apartments">Апартаменты
+                  </label>
+                </fieldset>
+              </div>
+              <div class="filter-right-column">
+                <fieldset class="filter-form-group">
+                  <legend class="filter-title">Стоимость, ₽:</legend>
+                  <input class="input-number" type="number" min="0" placeholder="0">
+                  <input class="input-number" type="number" max="12000" placeholder="9000">
+                  <input type="range" min="0" max="12000" value="9000">
+                </fieldset>
+                <div class="form-buttons">
+                  <button class="form-submit" type="submit">Применить</button>
+                  <button class="form-reset" type="reset">Сбросить</button>
+                </div>
               </div>
             </form>
           </section>
