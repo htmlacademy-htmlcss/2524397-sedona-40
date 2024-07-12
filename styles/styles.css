@@ -94,16 +94,74 @@ body {
   text-underline-position: under;
 }
 
-.navigation-user {
+.navigation-user-list {
   display: flex;
+  align-items: center;
+  flex-wrap: wrap;
   width: 312px;
   margin: 0;
-  margin-left: auto;
   padding: 0;
+  margin-left: auto;
   list-style: none;
 }
 
-.navigation-user-link,
+.navigation-user-link {
+  position: relative;
+  display: block;
+  padding: 22px 12px;
+  font-family: "PT Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+  color: #000000;
+  background-color: #ffffff;
+  text-decoration: none;
+}
+
+.navigation-icon {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
+.favorites-quantity {
+  position: relative;
+  display: block;
+  padding: 5px;
+  margin: auto;
+  min-width: 20px;
+  height: 20px;
+  color: #ffffff;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 10px;
+  top: -11px;
+  right: -8px;
+  background-color: #7db54f;
+  border-radius: 100vw;
+}
+
+.navigation-user-buttton {
+  display: block;
+  cursor: pointer;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  background-color: #756157;
+  text-transform: uppercase;
+  padding: 8px 34px;
+  margin-left: 20px;
+  border: none;
+  border-radius: 4px;
+}
+
 .social-link {
   font-family: "PT Sans", sans-serif;
   font-size: 20px;
@@ -177,6 +235,24 @@ body {
   list-style: none;
 }
 
+.advantages-item-title {
+  position: relative;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.advantages-item-title::after {
+  display: block;
+  content: "";
+  width: 60px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+  margin: 30px auto;
+}
+
 .advantages-item-flex {
   grid-column: 1/4;
   display: flex;
@@ -232,16 +308,6 @@ body {
   text-transform: uppercase;
   margin: 0;
   margin-bottom: 30px;
-}
-
-.advantages-item-title {
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 28px;
-  text-align: center;
-  text-transform: uppercase;
-  margin: 0;
-  margin-bottom: 62px;
 }
 
 .advantages-item-paragraph {
@@ -335,20 +401,9 @@ body {
   margin-bottom: 54px;
 }
 
-.navigation-user-buttton {
-  font-family: "PT Sans", sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  color: #ffffff;
-  background-color: #756157;
-  text-transform: uppercase;
-  padding: 8px 34px;
-  border: none;
-  border-radius: 4px;
-}
-
 .hotel-search-button {
+  display: inline-block;
+  cursor: pointer;
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 20px;
@@ -363,6 +418,8 @@ body {
 }
 
 .subscribe-button {
+  display: inline-block;
+  cursor: pointer;
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 20px;
@@ -685,7 +742,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 60px;
+  min-width: 60px;
   height: 60px;
   font-weight: 700;
   font-size: 20px;
