@@ -63,6 +63,7 @@ body {
 }
 
 .navigation-logo {
+  align-self: flex-start;
   width: 138px;
   margin-right: 30px;
   margin-top: -10px;
@@ -84,6 +85,7 @@ body {
 
 .navigation-list {
   display: flex;
+  flex-wrap: wrap;
   width: 464px;
   margin: 0;
   padding: 0;
@@ -173,8 +175,8 @@ body {
   font-size: 10px;
   font-weight: 400;
   line-height: 10px;
-  top: 10px;
-  right: -3px;
+  top: 8px;
+  right: 4px;
   background-color: #7db54f;
   border-radius: 100vw;
 }
@@ -217,11 +219,6 @@ body {
 }
 
 /* MAIN */
-
-.page-container {
-  width: 1200px;
-  margin: 0 auto;
-}
 
 .main-container {
   flex-grow: 1;
@@ -286,6 +283,18 @@ body {
   text-align: center;
   text-transform: uppercase;
   margin: 0;
+  padding-top: 20px;
+}
+
+.advantages-item-paragraph {
+  text-align: center;
+  margin: 0;
+  padding-bottom: 20px;
+}
+
+.advantages-img {
+  height: 100%;
+  object-fit: cover;
 }
 
 .advantages-item-title::after {
@@ -414,11 +423,6 @@ body {
   margin-bottom: 30px;
 }
 
-.advantages-item-paragraph {
-  text-align: center;
-  margin: 0;
-}
-
 .services-item-paragraph {
   text-align: center;
   margin: 0;
@@ -461,6 +465,7 @@ body {
   line-height: 26px;
   text-align: center;
   color: #333333;
+  margin: 0;
   margin-bottom: 54px;
 }
 
@@ -520,7 +525,7 @@ body {
 }
 
 .input-email {
-  width: 400px;
+  width: 452px;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 24px;
@@ -541,7 +546,8 @@ body {
   background-color: #82b3d3;
   text-align: center;
   text-transform: uppercase;
-  padding: 8px 50px;
+  margin-left: -6px;
+  padding: 9px 50px 9px 50px;
   border: none;
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
@@ -795,6 +801,7 @@ input[type="number"]::-webkit-outer-spin-button {
   border: none;
   background-color: transparent;
   padding: 0;
+  padding-top: 2px;
   margin: 0;
   display: block;
 }
@@ -853,6 +860,8 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .footer-social-list {
   display: flex;
+  flex-wrap: wrap;
+  max-width: 142px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -946,17 +955,17 @@ input[type="number"]::-webkit-outer-spin-button {
   margin-right: 28px;
 }
 
-.breadcrumbs-item::after {
+.breadcrumbs-item:not(:first-child):before {
   position: absolute;
   content: "";
   width: 10px;
+  height: 10px;
   display: block;
   background-image: url("../images/catalog/breadcrumbs-arrow.svg");
-  background-repeat: no-repeat;
   background-size: 10px;
   background-position: center center;
-  left: 0;
-  top: 0;
+  background-repeat: no-repeat;
+  left: -19px;
 }
 
 .breadcrumbs-item:last-child {
@@ -1010,6 +1019,10 @@ input[type="number"]::-webkit-outer-spin-button {
   margin-bottom: 16px;
 }
 
+.control-label {
+  padding-left: 36px;
+}
+
 .filter-item:hover .control-mark,
 .filter-item:hover .control-label {
   opacity: 0.6;
@@ -1034,19 +1047,15 @@ input[type="number"]::-webkit-outer-spin-button {
   background-color: #ffffff;
 }
 
-.control-label {
-  padding-left: 16px;
-}
-
-.control-input[type="checkbox"]:checked + .control-mark::before,
-.control-input[type="checkbox"]:checked + .control-mark::after {
+.control-input[type="checkbox"]:checked + .control-mark::before {
   content: "";
   position: absolute;
-  top: 7px;
-  left: 2px;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
   width: 12px;
-  height: 2px;
-  background-color: #3f5e72;
+  height: 12px;
+  background-image: url("../images/catalog/tick.svg");
 }
 
 .circle-mark {
@@ -1057,6 +1066,18 @@ input[type="number"]::-webkit-outer-spin-button {
   left: 0;
   border-radius: 50%;
   background-color: #ffffff;
+}
+
+.circle-input[type="radio"]:checked + .circle-mark::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 10px;
+  height: 10px;
+  background-color: #3f5e72;
+  border-radius: 50%;
 }
 
 .filter-item:hover .circle-mark,
@@ -1284,7 +1305,8 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .product-rating {
   grid-column: 2/3;
-  justify-self: end;
+  padding: 9px 22px 8px 23px;
+  border-radius: 4px;
 }
 
 .card-link-tittle,
