@@ -38,10 +38,10 @@
           </li>
           <li class="navigation-user-item">
             <a class="navigation-user-link" href="#">
-              <svg class="navigation-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"
-                width="18" height="17" fill="none" viewBox="0 0 18 17">
+              <svg class="navigation-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none"
+                viewBox="0 0 20 20">
                 <path fill="#000"
-                  d="M8.9 17a.9.9 0 0 1-.8-.4c-5.4-6.1-6.7-7.5-7-7.9A5.4 5.4 0 0 1 5.5 0C6.8 0 8 .5 9 1.3a5.46 5.46 0 0 1 9 4.1c0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5c.3.4 3.5 4 6.1 6.9l6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4-.7-.8-1.7-1.3-2.7-1.3-1.8 0-3.3 1.5-3.3 3.3-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z" />
+                  d="M9.9 19a.9.9 0 0 1-.8-.4c-5.4-6.1-6.7-7.5-7-7.9A5.4 5.4 0 0 1 6.5 2C7.8 2 9 2.5 10 3.3a5.46 5.46 0 0 1 9 4.1c0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5c.3.4 3.5 4 6.1 6.9l6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4-.7-.8-1.7-1.3-2.7-1.3-1.8 0-3.3 1.5-3.3 3.3-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z" />
               </svg>
               <span class="visually-hidden">Избранное</span>
               <span class="favorites-quantity">12</span>
@@ -182,32 +182,34 @@
           <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
             <p class="check-in-group">
               <label for="check-in">Дата Заезда:</label>
-              <input class="field check-in-field" type="text" id="check-in" name="check-in"
-                placeholder="27 апреля 2020">
+              <input class="field check-in-field" type="text" id="check-in" name="check-in" value="27 апреля 2020"
+                placeholder="Укажите дату" required>
               <span class="field-status error-status">Мы не можем отправить вас в прошлое.</span>
             </p>
             <p class="check-out-group">
               <label for="check-out">Дата Выезда:</label>
-              <input class="field check-out-field" type="text" id="check-out" name="check-out"
-                placeholder="1 сентября 2023">
+              <input class="field check-out-field" type="text" id="check-out" name="check-out" value="1 сентября 2023"
+                placeholder="Укажите дату" required>
               <span class="field-status">На эти даты есть свободные номера. Пока есть.</span>
             </p>
             <div class="members-quantity">
               <p class="adults-group">
                 <label class="adults-label" for="adults">Взрослые:</label>
                 <button class="minus-button" type="button">
-                  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="20" height="20"
-                    fill="none" viewBox="0 0 20 20">
+                  <svg class="minus-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"
+                    width="20" height="20" fill="none" viewBox="0 0 20 20">
                     <path fill="#756157" fill-opacity=".3" d="M3 9v2h14V9H3Z" />
                   </svg>
+                  <span class="visually-hidden">Уменьшить количество взрослых</span>
                 </button>
-                <input class="quantity-field adults-quantity" type="number" id="adults" name="adults-quantity"
-                  placeholder="2">
+                <input class="quantity-field adults-quantity" type="number" id="adults" name="adults-quantity" value="2"
+                  placeholder="0" required>
                 <button class="plus-button" type="button">
-                  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="20" height="20"
-                    fill="none" viewBox="0 0 20 20">
+                  <svg class="plus-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"
+                    width="20" height="20" fill="none" viewBox="0 0 20 20">
                     <path fill="#756157" fill-opacity=".3" d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z" />
                   </svg>
+                  <span class="visually-hidden">Увеличить количество взрослых</span>
                 </button>
               </p>
               <p class="child-group">
@@ -223,23 +225,24 @@
                     будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
                 </span>
                 <button class="minus-button" type="button">
-                  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="20" height="20"
-                    fill="none" viewBox="0 0 20 20">
+                  <svg class="minus-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"
+                    width="20" height="20" fill="none" viewBox="0 0 20 20">
                     <path fill="#756157" fill-opacity=".3" d="M3 9v2h14V9H3Z" />
                   </svg>
+                  <span class="visually-hidden">Уменьшить количество детей</span>
                 </button>
-                <input class="quantity-field child-quantity" type="number" id="child" name="child-quantity"
-                  placeholder="2">
+                <input class="quantity-field child-quantity" type="number" id="child" name="child-quantity" value="2"
+                  placeholder="0">
                 <button class="plus-button" type="button">
-                  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="20" height="20"
-                    fill="none" viewBox="0 0 20 20">
+                  <svg class="plus-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"
+                    width="20" height="20" fill="none" viewBox="0 0 20 20">
                     <path fill="#756157" fill-opacity=".3" d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z" />
                   </svg>
+                  <span class="visually-hidden">Увеличить количество детей</span>
                 </button>
               </p>
             </div>
-          </form>
-          <button class="sarch-form-button" type="submit">Найти</button>
+            <button class="sarch-form-button" type="submit">Найти</button>
           </form>
         </section>
         <button class="modal-close-button" type="button">
