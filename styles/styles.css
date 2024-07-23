@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: > 2% and last 1 version
+*/
+
 @font-face {
   font-family: "PT Sans";
   font-style: normal;
@@ -49,6 +56,7 @@ body {
   border: 0;
   padding: 0;
   white-space: nowrap;
+  -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
@@ -298,7 +306,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 102px 85px;
+  padding: 102px 80px;
 }
 
 .advantages-item-title {
@@ -820,6 +828,7 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 input[type="number"] {
+  -webkit-appearance: textfield;
   appearance: textfield;
 }
 
@@ -1137,6 +1146,7 @@ input[type="number"] {
 }
 
 .control-input {
+  -webkit-appearance: none;
   appearance: none;
   cursor: pointer;
   position: relative;
@@ -1178,6 +1188,7 @@ input[type="number"] {
 }
 
 .circle-input {
+  -webkit-appearance: none;
   appearance: none;
   cursor: pointer;
   position: relative;
@@ -1288,6 +1299,7 @@ input[type="number"] {
 
 .range .range-input::-webkit-outer-spin-button,
 .range-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
   appearance: none;
   margin: 0;
 }
@@ -1431,6 +1443,7 @@ input[type="number"] {
 }
 
 .sorting {
+  -webkit-appearance: none;
   appearance: none;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
@@ -1519,6 +1532,7 @@ input[type="number"] {
 
 .product-card-img {
   display: block;
+  width: 100%;
   object-fit: cover;
 }
 
