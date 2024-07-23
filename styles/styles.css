@@ -320,8 +320,13 @@ body {
 }
 
 .advantages-item-paragraph {
+  color: #333333;
   text-align: center;
   margin: 0;
+}
+
+.item-paragraph-white {
+  color: #ffffff;
 }
 
 .advantages-img {
@@ -439,6 +444,7 @@ body {
 }
 
 .services-item-paragraph {
+  color: #333333;
   text-align: center;
   margin: 0;
 }
@@ -820,14 +826,13 @@ body {
   outline: transparent;
 }
 
-
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
+.quantity-field::-webkit-inner-spin-button,
+.quantity-field::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-input[type="number"] {
+.quantity-field {
   -webkit-appearance: textfield;
   appearance: textfield;
 }
@@ -1297,11 +1302,15 @@ input[type="number"] {
   opacity: 0.3;
 }
 
-.range .range-input::-webkit-outer-spin-button,
-.range-input::-webkit-inner-spin-button {
+.range-input::-webkit-inner-spin-button,
+.range-input::-webkit-outer-spin-button {
   -webkit-appearance: none;
-  appearance: none;
   margin: 0;
+}
+
+.range-input {
+  -webkit-appearance: textfield;
+  appearance: textfield;
 }
 
 .range-scale {
@@ -1433,6 +1442,7 @@ input[type="number"] {
 }
 
 .catalog-result-title {
+  max-width: 500px;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
