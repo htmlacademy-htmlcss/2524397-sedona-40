@@ -1496,7 +1496,7 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .product-cards-list {
   display: grid;
-  grid-template-columns: repeat(3, 340px);
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   margin: 0 auto;
   padding-bottom: 40px;
